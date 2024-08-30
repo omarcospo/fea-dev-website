@@ -11,7 +11,7 @@
 <main>
 	<nav>
 		<div class={`logo ${isOpen ? 'open' : ''}`}>
-			<a href="{base}/">
+			<a href="/">
 				<img src={devLogo} alt="FEA.dev logo" width="125" />
 			</a>
 		</div>
