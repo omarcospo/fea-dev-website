@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import devLogo from '/images/logo.svg';
 	let isOpen = false;
 
@@ -10,14 +11,14 @@
 <main>
 	<nav>
 		<div class={`logo ${isOpen ? 'open' : ''}`}>
-			<a href="/">
+			<a href="{base}/">
 				<img src={devLogo} alt="FEA.dev logo" width="125" />
 			</a>
 		</div>
 		<div class={`menu ${isOpen ? 'open' : ''}`}>
-			<a href="/Projetos">Projetos</a>
-			<a href="/about">Sobre</a>
-			<a href="/Contato">Contato</a>
+			<a href="{base}/Projetos">Projetos</a>
+			<a href="{base}/about">Sobre</a>
+			<a href="{base}/Contato">Contato</a>
 		</div>
 		<div class={`hamburger ${isOpen ? 'open' : ''}`} on:click={toggleMenu}>
 			<div></div>
