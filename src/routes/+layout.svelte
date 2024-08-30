@@ -4,6 +4,10 @@
 	import Footer from '$lib/Footer.svelte';
 </script>
 
+<svelte:head>
+	<base href="/fea-dev-website/" />
+</svelte:head>
+
 <Navbar />
 <slot></slot>
 <Footer />

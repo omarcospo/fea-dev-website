@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import devLogo from '/images/logo.svg';
 	let isOpen = false;
 
@@ -16,9 +15,9 @@
 			</a>
 		</div>
 		<div class={`menu ${isOpen ? 'open' : ''}`}>
-			<a href="{base}/Projetos">Projetos</a>
-			<a href="{base}/about">Sobre</a>
-			<a href="{base}/Contato">Contato</a>
+			<a href="/Projetos">Projetos</a>
+			<a href="/about">Sobre</a>
+			<a href="/Contato">Contato</a>
 		</div>
 		<div class={`hamburger ${isOpen ? 'open' : ''}`} on:click={toggleMenu}>
 			<div></div>
